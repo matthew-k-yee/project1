@@ -6,11 +6,11 @@ SPECS:
 -- there are 2 players playing
 2) Players clicks one of the five images shown on the screen
 3) Winning Conditions
-  -- A beats B and D
-  -- B beats C and D
-  -- C beats A and E
-  -- D beats E and C
-  -- E beats B and A
+  -- [A beats B and D]
+  -- [B beats C and D]
+  -- [C beats A and E]
+  -- [D beats E and C]
+  -- [E beats B and A]
   -- a; rock// Jordan
   -- b; scissors // Adidas
   -- c; paper // Reebok
