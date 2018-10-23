@@ -15,7 +15,7 @@ h3{
 }
 
 body{
-  background: white;
+  background: #e0dbd1;
 }
 
 .scorebox{
@@ -64,13 +64,21 @@ body{
   border-radius: 50%;
 }
 
+.commentary{
+  background: yellow;
+  width: 60%;
+  margin: 0 auto;
+  font-size: 20px;
+  font-family: 'Varela Round', sans-serif;
+  margin-top: 40px;
+}
+
 #container{
   display: flex;
   flex-direction: row;
   justify-content: space-around; */
   width: 30%;
-  margin-top: 150px;
-
+  margin-top: 90px;
 }
 
 .box{
@@ -81,22 +89,69 @@ body{
   font-size: 28px;
 }
 
+.box p {
+  font-size: 14px;
+  /* visibility: hidden; */
+  opacity: 0.0;
+  animation-name: brand-name;
+}
+
 #box1:hover{
   background-color: red;
   animation-name: nike;
-  animation-duration: 3s;
+  animation-duration: 5s;
+}
+
+@@keyframes brand-name; {
+  0%{
+    opacity: 0;
+    visible: hidden;
+  }
+
+  100%{
+    opacity: 1;
+    visibility: visible;
+  }
 }
 
 @keyframes nike {
   0% {
-    transform: translateY(0) scale(1) rotate(0deg);
+    /* transform: translateY(0) scale(1) rotate(0deg); */
+    transform: translateX(4px);
+    /* visibility: visible;
+    opacity: 1; */
+    /* transition: all .2s ease-in-out */
+    color: white
+  }
+  20% {
+    /* transform: translateY(-25px) scale(4) rotate(360deg); */
+    transform: translateX(-4px);
+    /* visibility: visible;
+    opacity: 1; */
   }
   60% {
-    transform: translateY(-25px) scale(4) rotate(360deg);
+    /* transform: translateY(-25px) scale(4) rotate(360deg); */
+    transform: translateX(2px);
+    /* visibility: visible;
+    opacity: 1; */
+  }
+  80% {
+    /* transform: translateY(-25px) scale(4) rotate(360deg); */
+    transform: translateX(-1px);
+    /* visibility: visible;
+    opacity: 1; */
   }
   100% {
-    transform: translateY(0) scale(1) rotate(0deg);
+    /* transform: translateY(0) scale(1) rotate(0deg); */
+    transform: translateX(0px);
+    /* visibility: visible;
+    opacity: 1; */
+
   }
+}
+
+.nikeBeats{
+
 }
 
 
@@ -108,13 +163,37 @@ body{
 
 @keyframes adidas {
   0% {
-    transform: translateY(0) scale(1) rotate(0deg);
+    /* transform: translateY(0) scale(1) rotate(0deg); */
+    transform: translateX(4px);
+    /* visibility: visible;
+    opacity: 1; */
+    /* transition: all .2s ease-in-out */
+    color: white
+  }
+  20% {
+    /* transform: translateY(-25px) scale(4) rotate(360deg); */
+    transform: translateX(-4px);
+    /* visibility: visible;
+    opacity: 1; */
   }
   60% {
-    transform: translateY(-25px) scale(4) rotate(360deg);
+    /* transform: translateY(-25px) scale(4) rotate(360deg); */
+    transform: translateX(2px);
+    /* visibility: visible;
+    opacity: 1; */
+  }
+  80% {
+    /* transform: translateY(-25px) scale(4) rotate(360deg); */
+    transform: translateX(-1px);
+    /* visibility: visible;
+    opacity: 1; */
   }
   100% {
-    transform: translateY(0) scale(1) rotate(0deg);
+    /* transform: translateY(0) scale(1) rotate(0deg); */
+    transform: translateX(0px);
+    /* visibility: visible;
+    opacity: 1; */
+
   }
 }
 
@@ -126,13 +205,37 @@ body{
 
 @keyframes reebok {
   0% {
-    transform: translateY(0) scale(1) rotate(0deg);
+    /* transform: translateY(0) scale(1) rotate(0deg); */
+    transform: translateX(4px);
+    /* visibility: visible;
+    opacity: 1; */
+    /* transition: all .2s ease-in-out */
+    color: white
+  }
+  20% {
+    /* transform: translateY(-25px) scale(4) rotate(360deg); */
+    transform: translateX(-4px);
+    /* visibility: visible;
+    opacity: 1; */
   }
   60% {
-    transform: translateY(-25px) scale(4) rotate(360deg);
+    /* transform: translateY(-25px) scale(4) rotate(360deg); */
+    transform: translateX(2px);
+    /* visibility: visible;
+    opacity: 1; */
+  }
+  80% {
+    /* transform: translateY(-25px) scale(4) rotate(360deg); */
+    transform: translateX(-1px);
+    /* visibility: visible;
+    opacity: 1; */
   }
   100% {
-    transform: translateY(0) scale(1) rotate(0deg);
+    /* transform: translateY(0) scale(1) rotate(0deg); */
+    transform: translateX(0px);
+    /* visibility: visible;
+    opacity: 1; */
+
   }
 }
 
@@ -144,13 +247,37 @@ body{
 
 @keyframes new-balance {
   0% {
-    transform: translateY(0) scale(1) rotate(0deg);
+    /* transform: translateY(0) scale(1) rotate(0deg); */
+    transform: translateX(4px);
+    /* visibility: visible;
+    opacity: 1; */
+    /* transition: all .2s ease-in-out */
+    color: white
+  }
+  20% {
+    /* transform: translateY(-25px) scale(4) rotate(360deg); */
+    transform: translateX(-4px);
+    /* visibility: visible;
+    opacity: 1; */
   }
   60% {
-    transform: translateY(-25px) scale(4) rotate(360deg);
+    /* transform: translateY(-25px) scale(4) rotate(360deg); */
+    transform: translateX(2px);
+    /* visibility: visible;
+    opacity: 1; */
+  }
+  80% {
+    /* transform: translateY(-25px) scale(4) rotate(360deg); */
+    transform: translateX(-1px);
+    /* visibility: visible;
+    opacity: 1; */
   }
   100% {
-    transform: translateY(0) scale(1) rotate(0deg);
+    /* transform: translateY(0) scale(1) rotate(0deg); */
+    transform: translateX(0px);
+    /* visibility: visible;
+    opacity: 1; */
+
   }
 }
 
@@ -162,12 +289,36 @@ body{
 
 @keyframes jordan {
   0% {
-    transform: translateY(0) scale(1) rotate(0deg);
+    /* transform: translateY(0) scale(1) rotate(0deg); */
+    transform: translateX(4px);
+    /* visibility: visible;
+    opacity: 1; */
+    /* transition: all .2s ease-in-out */
+    color: white
+  }
+  20% {
+    /* transform: translateY(-25px) scale(4) rotate(360deg); */
+    transform: translateX(-4px);
+    /* visibility: visible;
+    opacity: 1; */
   }
   60% {
-    transform: translateY(-25px) scale(4) rotate(360deg);
+    /* transform: translateY(-25px) scale(4) rotate(360deg); */
+    transform: translateX(2px);
+    /* visibility: visible;
+    opacity: 1; */
+  }
+  80% {
+    /* transform: translateY(-25px) scale(4) rotate(360deg); */
+    transform: translateX(-1px);
+    /* visibility: visible;
+    opacity: 1; */
   }
   100% {
-    transform: translateY(0) scale(1) rotate(0deg);
+    /* transform: translateY(0) scale(1) rotate(0deg); */
+    transform: translateX(0px);
+    /* visibility: visible;
+    opacity: 1; */
+
   }
 }
