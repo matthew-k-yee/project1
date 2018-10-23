@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
 .root {
   text-align: center;
 }
@@ -8,6 +11,7 @@ header{
 }
 
 h3{
+  font-family:'Varela Round', sans-serif;
 }
 
 body{
@@ -18,7 +22,7 @@ body{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  border: 5px dashed yellow;
+  border: 5px dashed orange;
   width: 20%;
   margin: 0 auto;
   margin-bottom: 5px;
@@ -45,29 +49,125 @@ body{
   width: 80%;
   height: 200px;
   padding-top: 20px;
-  border-radius: 50%;
+  border-radius: 60%;
 }
 
 .player2gameZone{
-  background: white;
+  background: orange;
   padding-bottom: 70px;
-  border-radius: 50%;
+  border-radius: 60%;
 }
 
 .player1gameZone{
-  background: white;
+  background: black;
   padding-bottom: 80px;
   border-radius: 50%;
 }
 
-.container{
+#container{
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap
+  justify-content: space-around; */
+  width: 30%;
+  margin-top: 150px;
+
 }
 
 .box{
-  width: 300px;
+  width: 200px;
   height: 100%;
-  border: 1px solid yellow;
+  border-bottom: 1px dotted orange;
+  font-family: 'Lobster', cursive;
+  font-size: 28px;
+}
+
+#box1:hover{
+  background-color: red;
+  animation-name: nike;
+  animation-duration: 3s;
+}
+
+@keyframes nike {
+  0% {
+    transform: translateY(0) scale(1) rotate(0deg);
+  }
+  60% {
+    transform: translateY(-25px) scale(4) rotate(360deg);
+  }
+  100% {
+    transform: translateY(0) scale(1) rotate(0deg);
+  }
+}
+
+
+#box2:hover{
+  background-color: darkgreen;
+  animation-name: adidas;
+  animation-duration: 3s;
+}
+
+@keyframes adidas {
+  0% {
+    transform: translateY(0) scale(1) rotate(0deg);
+  }
+  60% {
+    transform: translateY(-25px) scale(4) rotate(360deg);
+  }
+  100% {
+    transform: translateY(0) scale(1) rotate(0deg);
+  }
+}
+
+#box3:hover{
+  background-color: silver;
+  animation-name: reebok;
+  animation-duration: 3s;
+}
+
+@keyframes reebok {
+  0% {
+    transform: translateY(0) scale(1) rotate(0deg);
+  }
+  60% {
+    transform: translateY(-25px) scale(4) rotate(360deg);
+  }
+  100% {
+    transform: translateY(0) scale(1) rotate(0deg);
+  }
+}
+
+#box4:hover{
+  background-color: gold;
+  animation-name: new-balance;
+  animation-duration: 3s;
+}
+
+@keyframes new-balance {
+  0% {
+    transform: translateY(0) scale(1) rotate(0deg);
+  }
+  60% {
+    transform: translateY(-25px) scale(4) rotate(360deg);
+  }
+  100% {
+    transform: translateY(0) scale(1) rotate(0deg);
+  }
+}
+
+#box5:hover{
+  background-color: #000080;
+  animation-name: jordan;
+  animation-duration: 3s;
+}
+
+@keyframes jordan {
+  0% {
+    transform: translateY(0) scale(1) rotate(0deg);
+  }
+  60% {
+    transform: translateY(-25px) scale(4) rotate(360deg);
+  }
+  100% {
+    transform: translateY(0) scale(1) rotate(0deg);
+  }
 }
