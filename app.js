@@ -1,5 +1,6 @@
 const player1Score = 0;
 const player2Score = 0;
+let playerChoice = 0;
 
 const nike = document.getElementById('box1');
 const adidas = document.getElementById('box2');
@@ -18,21 +19,50 @@ let score2 = document.getElementsByClassName('player2Score');
 //new balance beats nike and Reebok
 //jordan beats new balance and adidas
 
-function player1Choice(user) {
-  console.log('user chooses ' + user)
-}
-
 function player2Choice() {
   let choices = ['nike', 'adidas', 'reebok', 'new balance', 'jordan'];
   let random = Math.floor(Math.random() * 5)
-  return choices[random]
-}
-player2Choice();
-
-function game() {
-
+  return choices[random];
 }
 
+function gameConditions (choice) {
+  console.log(`user1 choice: ${choice}`);
+  let player2 = player2Choice();
+  console.log(`user2 choice: ${player2}`)
+  if ( choice === 'nike' && (player2 === 'adidas' || player2 === 'jordan')) {
+    console.log('BELIEVE THE HYPE!')
+  } else if ( choice === 'adidas' && (player2 === 'new balance' || player2 === 'reebok')) {
+    console.log('BELIEVE THE HYPE!')
+  } else if ( choice === 'reebok' && (player2 === 'nike' || player2 === 'jordan')) {
+    console.log('BELIEVE THE HYPE!')
+  } else if ( choice === 'new balance' && (player2 === 'nike' || player2 === 'reebok')) {
+    console.log('BELIEVE THE HYPE')
+  } else if ( choice === 'jordan' && (player2 === 'new balance' || player2 === 'adidas')) {
+    console.log('BELIEVE THE HYPE!')
+  } else if ( player2 === 'nike' && (choice === 'adidas' || choice === 'jordan')) {
+    console.log('Take the L!')
+  } else if ( player2 === 'adidas' && (choice === 'new balance' || choice === 'reebok')) {
+    console.log('Take the L!')
+  } else if ( player2 === 'reebok' && (choice === 'nike' || choice === 'jordan')) {
+    console.log('Take the L!')
+  } else if ( player2 === 'new balance' && (choice === 'nike' || choice === 'reebok')) {
+    console.log('Take the L')
+  } else if ( player2 === 'jordan' && (choice === 'new balance' || choice === 'adidas')) {
+      console.log('Take the L')
+  } else {
+    console.log('Re-Do');
+  }
+
+}
+
+// function win() {
+//   const player1Score = 0;
+//   player1Score++;
+// }
+
+// function lose() {
+//   if playerTwo wins -- log one point to player 2
+// }
 
 
 //lose logic
@@ -58,19 +88,19 @@ function game() {
 //function clicks
 function action() {
   nike.addEventListener('click', function(){
-    player1Choice('nike');
+    gameConditions('nike');
   });
   adidas.addEventListener('click', function(){
-    player1Choice('adidas');
+    gameConditions('adidas');
   });
   reebok.addEventListener('click', function(){
-    player1Choice('reebok');
+    gameConditions('reebok');
   });
   newBalance.addEventListener('click', function(){
-    player1Choice('new balance');
+    gameConditions('new balance');
   });
   jordan.addEventListener('click', function(){
-    player1Choice('jordan');
+    gameConditions('jordan');
   });
 }
 
