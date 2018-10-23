@@ -99,7 +99,7 @@ body{
 #box1:hover{
   background-color: red;
   animation-name: nike;
-  animation-duration: 5s;
+  animation-duration: 10s;
 }
 
 @@keyframes brand-name; {
@@ -158,7 +158,7 @@ body{
 #box2:hover{
   background-color: darkgreen;
   animation-name: adidas;
-  animation-duration: 3s;
+  animation-duration: 10s;
 }
 
 @keyframes adidas {
@@ -200,7 +200,7 @@ body{
 #box3:hover{
   background-color: silver;
   animation-name: reebok;
-  animation-duration: 3s;
+  animation-duration: 10s;
 }
 
 @keyframes reebok {
@@ -242,7 +242,7 @@ body{
 #box4:hover{
   background-color: gold;
   animation-name: new-balance;
-  animation-duration: 3s;
+  animation-duration: 10s;
 }
 
 @keyframes new-balance {
@@ -284,7 +284,7 @@ body{
 #box5:hover{
   background-color: #000080;
   animation-name: jordan;
-  animation-duration: 3s;
+  animation-duration: 10s;
 }
 
 @keyframes jordan {

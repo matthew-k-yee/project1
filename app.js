@@ -7,8 +7,9 @@ const reebok = document.getElementById('box3');
 const newBalance = document.getElementById('box4');
 const jordan = document.getElementById('box5');
 
-let score1 = document.getElemntByClass(player1Score);
-
+let scoreBox = document.querySelector('.scorebox');
+let score1 = document.getElementsByClassName('player1Score');
+let score2 = document.getElementsByClassName('player2Score');
 
 //win logic
 //nike beats adidas and Jordan
@@ -17,12 +18,24 @@ let score1 = document.getElemntByClass(player1Score);
 //new balance beats nike and Reebok
 //jordan beats new balance and adidas
 
-// function win(player1, player2) {
-//   if (chose1 === nike && choce2 === adidas || jordan)
-//     return player1 wins
-// }
+function player1Choice(user) {
+  console.log('user chooses ' + user)
+}
+
+function player2Choice() {
+  let choices = ['nike', 'adidas', 'reebok', 'new balance', 'jordan'];
+  let random = Math.floor(Math.random() * 5)
+  return choices[random]
+}
+player2Choice();
+
+function game() {
+
+}
 
 
+
+//lose logic
 
 //tie logic
 // if both users choose same element
@@ -30,21 +43,35 @@ let score1 = document.getElemntByClass(player1Score);
 // if both users don't choose element with winning formula
 //-- do it again
 
-function draw (chose1, choce2) {
-  if (chose1 === chose2)
-    return tie
+// function draw (player1Choice, player2Choice) {
+//   if (player1Choice === player2Choice)
+//     return `It's a tie`
+// } else if (   ) {
+//     return `Try again`
+// } else {
+//
+// }
+//
+// draw();
 
-}
-
-// function game()
 
 //function clicks
-nike.addEventListener('click', clickPop);
-adidas.addEventListener('click', clickPop);
-reebok.addEventListener('click', clickPop);
-newBalance.addEventListener('click', clickPop);
-jordan.addEventListener('click', clickPop);
-
-function clickPop() {
-  console.log('User picked');
+function action() {
+  nike.addEventListener('click', function(){
+    player1Choice('nike');
+  });
+  adidas.addEventListener('click', function(){
+    player1Choice('adidas');
+  });
+  reebok.addEventListener('click', function(){
+    player1Choice('reebok');
+  });
+  newBalance.addEventListener('click', function(){
+    player1Choice('new balance');
+  });
+  jordan.addEventListener('click', function(){
+    player1Choice('jordan');
+  });
 }
+
+action();
