@@ -10,8 +10,17 @@ header{
   padding-top: 5px;
 }
 
+h1{
+  font-size: 55px;
+  letter-spacing: 2px;
+
+}
+
 h3{
+  margin-top: -15px;
   font-family:'Varela Round', sans-serif;
+  font-size: 30px;
+  text-shadow: 1px 1px 10px black, 0 0 1em red, 0 0 0.2em red;
 }
 
 body{
@@ -26,6 +35,7 @@ body{
   width: 20%;
   margin: 0 auto;
   margin-bottom: 5px;
+  font-size: 40px;
 }
 
 .player1Score{
@@ -46,29 +56,31 @@ body{
 .playZone {
   background: white;
   margin: 0 auto;
-  width: 80%;
-  height: 200px;
-  padding-top: 20px;
-  border-radius: 60%;
+  width: 50%;
+  height: 300px;
+  margin-top: 50px;
+  /* border-radius: 0%; */
 }
 
-.player2gameZone{
+/* .player2gameZone{
   background: orange;
+  padding-top: 50px;
   padding-bottom: 70px;
   border-radius: 60%;
 }
 
 .player1gameZone{
   background: black;
+  padding-top: 50px;
   padding-bottom: 80px;
   border-radius: 50%;
-}
+} */
 
 .commentary{
-  background: yellow;
+  background: rgba(219, 219, 172, .5);
   width: 60%;
   margin: 0 auto;
-  font-size: 20px;
+  font-size: 30px;
   font-family: 'Varela Round', sans-serif;
   margin-top: 40px;
 }
@@ -76,17 +88,21 @@ body{
 #container{
   display: flex;
   flex-direction: row;
-  justify-content: space-around; */
-  width: 30%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 80%;
+  margin: 0 auto;
   margin-top: 90px;
 }
 
 .box{
-  width: 200px;
+  width: 30%;
   height: 100%;
   border-bottom: 1px dotted orange;
   font-family: 'Lobster', cursive;
   font-size: 28px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 .box p {
@@ -94,6 +110,11 @@ body{
   /* visibility: hidden; */
   opacity: 0.0;
   animation-name: brand-name;
+}
+
+.sneaker-img{
+  height: 100px;
+  width: 100px;
 }
 
 #box1:hover{
@@ -117,7 +138,7 @@ body{
 @keyframes nike {
   0% {
     /* transform: translateY(0) scale(1) rotate(0deg); */
-    transform: translateX(4px);
+    transform: translateX(8px);
     /* visibility: visible;
     opacity: 1; */
     /* transition: all .2s ease-in-out */
@@ -125,19 +146,19 @@ body{
   }
   20% {
     /* transform: translateY(-25px) scale(4) rotate(360deg); */
-    transform: translateX(-4px);
+    transform: translateX(-8px);
     /* visibility: visible;
     opacity: 1; */
   }
   60% {
     /* transform: translateY(-25px) scale(4) rotate(360deg); */
-    transform: translateX(2px);
+    transform: translateX(4px);
     /* visibility: visible;
     opacity: 1; */
   }
   80% {
     /* transform: translateY(-25px) scale(4) rotate(360deg); */
-    transform: translateX(-1px);
+    transform: translateX(-4px);
     /* visibility: visible;
     opacity: 1; */
   }
