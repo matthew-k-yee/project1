@@ -1,16 +1,15 @@
-const player1Score = 0;
-const player2Score = 0;
-let playerChoice = 0;
+let player1Score = 0;
+let player2Score = 0;
 
-const nike = document.getElementById('box1');
-const adidas = document.getElementById('box2');
-const reebok = document.getElementById('box3');
-const newBalance = document.getElementById('box4');
-const jordan = document.getElementById('box5');
+const nike = document.querySelector('#box1');
+const adidas = document.querySelector('#box2');
+const reebok = document.querySelector('#box3');
+const newBalance = document.querySelector('#box4');
+const jordan = document.querySelector('#box5');
 
 let scoreBox = document.querySelector('.scorebox');
-let score1 = document.getElementsByClassName('player1Score');
-let score2 = document.getElementsByClassName('player2Score');
+let score1 = document.querySelector('.player1Score');
+let score2 = document.querySelector('.player2Score');
 
 //win logic
 //nike beats adidas and Jordan
@@ -30,42 +29,49 @@ function gameConditions (choice) {
   let player2 = player2Choice();
   console.log(`user2 choice: ${player2}`)
   if ( choice === 'nike' && (player2 === 'adidas' || player2 === 'jordan')) {
-    console.log('BELIEVE THE HYPE!')
+      console.log('BELIEVE THE HYPE!');
+      return win();
   } else if ( choice === 'adidas' && (player2 === 'new balance' || player2 === 'reebok')) {
-    console.log('BELIEVE THE HYPE!')
+      console.log('BELIEVE THE HYPE!');
+      return win();
   } else if ( choice === 'reebok' && (player2 === 'nike' || player2 === 'jordan')) {
-    console.log('BELIEVE THE HYPE!')
+      console.log('BELIEVE THE HYPE!');
+      return win();
   } else if ( choice === 'new balance' && (player2 === 'nike' || player2 === 'reebok')) {
-    console.log('BELIEVE THE HYPE')
+      console.log('BELIEVE THE HYPE')
+      return win();
   } else if ( choice === 'jordan' && (player2 === 'new balance' || player2 === 'adidas')) {
-    console.log('BELIEVE THE HYPE!')
+      console.log('BELIEVE THE HYPE!');
+      return win();
   } else if ( player2 === 'nike' && (choice === 'adidas' || choice === 'jordan')) {
-    console.log('Take the L!')
+      console.log('Take the L!');
+      return lose();
   } else if ( player2 === 'adidas' && (choice === 'new balance' || choice === 'reebok')) {
-    console.log('Take the L!')
+      console.log('Take the L!');
+      return lose();
   } else if ( player2 === 'reebok' && (choice === 'nike' || choice === 'jordan')) {
-    console.log('Take the L!')
+      console.log('Take the L!');
+      return lose();
   } else if ( player2 === 'new balance' && (choice === 'nike' || choice === 'reebok')) {
-    console.log('Take the L')
+      console.log('Take the L');
+      return lose();
   } else if ( player2 === 'jordan' && (choice === 'new balance' || choice === 'adidas')) {
-      console.log('Take the L')
+      console.log('Take the L');
+      return lose();
   } else {
-    console.log('Re-Do');
+    return draw();
   }
 
 }
 
-// function win() {
-//   const player1Score = 0;
-//   player1Score++;
-// }
+function win() {
+  score1.innerHTML = player1Score++;
+}
 
-// function lose() {
-//   if playerTwo wins -- log one point to player 2
-// }
+function lose() {
+  score2.innerHTML = player2Score++;
+}
 
-
-//lose logic
 
 //tie logic
 // if both users choose same element
@@ -73,19 +79,10 @@ function gameConditions (choice) {
 // if both users don't choose element with winning formula
 //-- do it again
 
-// function draw (player1Choice, player2Choice) {
-//   if (player1Choice === player2Choice)
-//     return `It's a tie`
-// } else if (   ) {
-//     return `Try again`
-// } else {
-//
-// }
-//
-// draw();
+function draw () {
+  console.log(`it's a draw`);
+}
 
-
-//function clicks
 function action() {
   nike.addEventListener('click', function(){
     gameConditions('nike');
