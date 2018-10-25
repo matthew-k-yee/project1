@@ -20,7 +20,7 @@ h3{
   margin-top: -15px;
   font-family:'Varela Round', sans-serif;
   font-size: 25px;
-  text-shadow: 1px 1px 10px black, 0 0 1em red, 0 0 0.2em red;
+  text-shadow: 1px 1px 10px black, 0 0 1em #e6620a, 0 0 0.2em #e6620a;
 }
 
 body{
@@ -31,7 +31,7 @@ body{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  border: 5px dashed orange;
+  border: 5px groove #f6660d;
   width: 10%;
   margin: 0 auto;
   margin-bottom: 5px;
@@ -54,27 +54,31 @@ body{
 
 
 .playZone {
+  display: flex;
   background: white;
+  justify-content: space-between;
   margin: 0 auto;
   width: 50%;
   height: 200px;
   margin-top: 50px;
-  /* border-radius: 0%; */
-}
-
-/* .player2gameZone{
-  background: orange;
-  padding-top: 50px;
-  padding-bottom: 70px;
-  border-radius: 60%;
 }
 
 .player1gameZone{
-  background: black;
+  background: orange;
+  height: 80%;
+  width: 50%;
   padding-top: 50px;
-  padding-bottom: 80px;
-  border-radius: 50%;
-} */
+  /* padding-bottom: 70px; */
+}
+
+.player2gameZone{
+  background: black;
+  height: 100%;
+  width: 50%;
+  padding-top: 10px;
+  /* padding-bottom: 80px; */
+}
+
 
 .commentary{
   background: rgba(219, 219, 172, .5);
@@ -270,4 +274,8 @@ body{
 .p2text{
   font-family: 'Abril Fatface', cursive;
   font-size: 30px;
+}
+
+#player_1_img {
+  max-width: 200px;
 }
