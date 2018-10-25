@@ -4,7 +4,7 @@ let gameOver;
 
 const nike = document.querySelector('#box1');
 const adidas = document.querySelector('#box2');
-const reebok = document.querySelector('#box3');
+const asics = document.querySelector('#box3');
 const newBalance = document.querySelector('#box4');
 const jordan = document.querySelector('#box5');
 
@@ -16,12 +16,18 @@ let commentary = document.querySelector('#commentary-text');
 let player1Text = document.querySelector('.p1text');
 let player2Text = document.querySelector('.p2text');
 
+const nike_img = document.querySelector('img#img1')
+const adidas_img = document.querySelector('img#img2')
+const asics_img = document.querySelector('img#img3')
+const newBalance_img = document.querySelector('img#img4')
+const jordan_img = document.querySelector('img#img5')
+
+
 function player2Choice() {
-  let choices = ['nike', 'adidas', 'reebok', 'new balance', 'jordan'];
+  let choices = ['nike', 'adidas', 'asics', 'new balance', 'jordan'];
   let random = Math.floor(Math.random() * 5)
   player2Text.innerHTML = 'Guy Fieri picked ' + choices[random];
   return choices[random];
-
 }
 
 function gameConditions (choice) {
@@ -31,13 +37,13 @@ function gameConditions (choice) {
   if ( choice === 'nike' && (player2 === 'adidas' || player2 === 'jordan')) {
       console.log('BELIEVE THE HYPE!');
       return win();
-  } else if ( choice === 'adidas' && (player2 === 'new balance' || player2 === 'reebok')) {
+  } else if ( choice === 'adidas' && (player2 === 'new balance' || player2 === 'asics')) {
       console.log('BELIEVE THE HYPE!');
       return win();
-  } else if ( choice === 'reebok' && (player2 === 'nike' || player2 === 'jordan')) {
+  } else if ( choice === 'asics' && (player2 === 'nike' || player2 === 'jordan')) {
       console.log('BELIEVE THE HYPE!');
       return win();
-  } else if ( choice === 'new balance' && (player2 === 'nike' || player2 === 'reebok')) {
+  } else if ( choice === 'new balance' && (player2 === 'nike' || player2 === 'asics')) {
       console.log('BELIEVE THE HYPE')
       return win();
   } else if ( choice === 'jordan' && (player2 === 'new balance' || player2 === 'adidas')) {
@@ -46,13 +52,13 @@ function gameConditions (choice) {
   } else if ( player2 === 'nike' && (choice === 'adidas' || choice === 'jordan')) {
       console.log('Take the L!');
       return lose();
-  } else if ( player2 === 'adidas' && (choice === 'new balance' || choice === 'reebok')) {
+  } else if ( player2 === 'adidas' && (choice === 'new balance' || choice === 'asics')) {
       console.log('Take the L!');
       return lose();
-  } else if ( player2 === 'reebok' && (choice === 'nike' || choice === 'jordan')) {
+  } else if ( player2 === 'asics' && (choice === 'nike' || choice === 'jordan')) {
       console.log('Take the L!');
       return lose();
-  } else if ( player2 === 'new balance' && (choice === 'nike' || choice === 'reebok')) {
+  } else if ( player2 === 'new balance' && (choice === 'nike' || choice === 'asics')) {
       console.log('Take the L');
   } else if ( player2 === 'jordan' && (choice === 'new balance' || choice === 'adidas')) {
       console.log('Take the L');
@@ -96,9 +102,9 @@ function action() {
     p1Message('adidas');
   });
 
-  reebok.addEventListener('click', function(){
-    gameConditions('reebok');
-    p1Message('reebok');
+  asics.addEventListener('click', function(){
+    gameConditions('asics');
+    p1Message('asics');
   });
 
   newBalance.addEventListener('click', function(){

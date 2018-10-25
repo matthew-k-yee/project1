@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Varela+Round');
 @import url('https://fonts.googleapis.com/css?family=Lobster');
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
 
 .root {
   text-align: center;
@@ -11,15 +12,14 @@ header{
 }
 
 h1{
-  font-size: 35px;
+  font-size: 45px;
   letter-spacing: 2px;
-
 }
 
 h3{
   margin-top: -15px;
   font-family:'Varela Round', sans-serif;
-  font-size: 20px;
+  font-size: 25px;
   text-shadow: 1px 1px 10px black, 0 0 1em red, 0 0 0.2em red;
 }
 
@@ -82,49 +82,38 @@ body{
   margin: 0 auto;
   font-size: 20px;
   font-family: 'Varela Round', sans-serif;
-  margin-top: 40px;
+  margin-top: 30px;
 }
 
 #container{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  flex-wrap: wrap;
   width: 80%;
   margin: 0 auto;
-  margin-top: 90px;
+  margin-top: 50px;
 }
 
 .box{
-  width: 30%;
+  width: 10%;
   height: 100%;
   border-bottom: 1px dotted orange;
   font-family: 'Lobster', cursive;
   font-size: 28px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 10px;
 }
-
-/* .beat {
-  font-size: 14px;
-  color: rgba(219, 219, 172, .2)
-  /* visibility: hidden; */
-  /* opacity: 0.0; */
-}
-
-
-/* .beat:hover{
-  color: rgba(219, 219, 172, 1);
-  font-size: 40px;
-} */ */
 
 .sneaker-img{
-  height: 100px;
-  width: 100px;
+  width: 200px;
+  height: 130px;
 }
 
 #box1:hover:after{
-  font-size: 20px;
-  content: '\a Adidas/Jordan';
+  font-size: 30px;
+  content: '\a Adidas \a\a Jordan';
+  width: 100%;
   white-space: pre;
   padding-top: 12px;
   background-color: black;
@@ -134,56 +123,28 @@ body{
 }
 
 
-/* @@keyframes brand; {
-  0%{
-    opacity: 0;
-    color: blue
-  }
-
-  100%{
-    opacity: 1;
-  }
-} */
-
 @keyframes nike {
   0% {
-    /* transform: translateY(0) scale(1) rotate(0deg); */
     transform: translateX(8px);
-    /* visibility: visible;
-    opacity: 1; */
-    /* transition: all .2s ease-in-out */
     color: white
   }
   20% {
-    /* transform: translateY(-25px) scale(4) rotate(360deg); */
     transform: translateX(-8px);
-    /* visibility: visible;
-    opacity: 1; */
   }
   60% {
-    /* transform: translateY(-25px) scale(4) rotate(360deg); */
     transform: translateX(4px);
-    /* visibility: visible;
-    opacity: 1; */
   }
   80% {
-    /* transform: translateY(-25px) scale(4) rotate(360deg); */
     transform: translateX(-4px);
-    /* visibility: visible;
-    opacity: 1; */
   }
   100% {
-    /* transform: translateY(0) scale(1) rotate(0deg); */
     transform: translateX(0px);
-    /* visibility: visible;
-    opacity: 1; */
-
   }
 }
 
 #box2:hover:after{
-  font-size: 20px;
-  content: 'Reebok/New Balance';
+  font-size: 30px;
+  content: '\a Asics\a\a New Balance';
   padding-top: 12px;
   white-space: pre;
   background-color: black;
@@ -194,90 +155,56 @@ body{
 
 @keyframes adidas {
   0% {
-    /* transform: translateY(0) scale(1) rotate(0deg); */
     transform: translateX(8px);
-    /* visibility: visible;
-    opacity: 1; */
-    /* transition: all .2s ease-in-out */
     color: white
   }
   20% {
-    /* transform: translateY(-25px) scale(4) rotate(360deg); */
     transform: translateX(-8px);
-    /* visibility: visible;
-    opacity: 1; */
   }
   60% {
-    /* transform: translateY(-25px) scale(4) rotate(360deg); */
     transform: translateX(4px);
-    /* visibility: visible;
-    opacity: 1; */
   }
   80% {
-    /* transform: translateY(-25px) scale(4) rotate(360deg); */
     transform: translateX(-4px);
-    /* visibility: visible;
-    opacity: 1; */
   }
   100% {
-    /* transform: translateY(0) scale(1) rotate(0deg); */
     transform: translateX(0px);
-    /* visibility: visible;
-    opacity: 1; */
-
   }
 }
 
 #box3:hover:after{
-  font-size: 20px;
-  content: '\a Nike/Jordan';
+  font-size: 30px;
+  content: '\a Nike\a\a Jordan';
   white-space: pre;
   padding-top: 12px;
   background-color: black;
   color: white;
-  animation-name: reebok;
+  animation-name: asics;
   animation-duration: 10s;
 }
 
-@keyframes reebok {
+@keyframes asics {
   0% {
-    /* transform: translateY(0) scale(1) rotate(0deg); */
     transform: translateX(8px);
-    /* visibility: visible;
-    opacity: 1; */
-    /* transition: all .2s ease-in-out */
     color: white
   }
   20% {
-    /* transform: translateY(-25px) scale(4) rotate(360deg); */
     transform: translateX(-8px);
-    /* visibility: visible;
-    opacity: 1; */
   }
   60% {
-    /* transform: translateY(-25px) scale(4) rotate(360deg); */
     transform: translateX(4px);
-    /* visibility: visible;
-    opacity: 1; */
   }
   80% {
-    /* transform: translateY(-25px) scale(4) rotate(360deg); */
     transform: translateX(-4px);
-    /* visibility: visible;
-    opacity: 1; */
   }
   100% {
-    /* transform: translateY(0) scale(1) rotate(0deg); */
     transform: translateX(0px);
-    /* visibility: visible;
-    opacity: 1; */
-
   }
 }
 
 #box4:hover:after{
-  font-size: 20px;
-  content: '\a Nike/Reebok';
+  font-size: 30px;
+  content: '\a Nike\a\a Asics';
   white-space: pre;
   padding-top: 12px;
   background-color: black;
@@ -288,43 +215,26 @@ body{
 
 @keyframes new-balance {
   0% {
-    /* transform: translateY(0) scale(1) rotate(0deg); */
     transform: translateX(8px);
-    /* visibility: visible;
-    opacity: 1; */
-    /* transition: all .2s ease-in-out */
     color: white
   }
   20% {
-    /* transform: translateY(-25px) scale(4) rotate(360deg); */
     transform: translateX(-8px);
-    /* visibility: visible;
-    opacity: 1; */
   }
   60% {
-    /* transform: translateY(-25px) scale(4) rotate(360deg); */
     transform: translateX(4px);
-    /* visibility: visible;
-    opacity: 1; */
   }
   80% {
-    /* transform: translateY(-25px) scale(4) rotate(360deg); */
     transform: translateX(-4px);
-    /* visibility: visible;
-    opacity: 1; */
   }
   100% {
-    /* transform: translateY(0) scale(1) rotate(0deg); */
     transform: translateX(0px);
-    /* visibility: visible;
-    opacity: 1; */
-
   }
 }
 
 #box5:hover:after{
-  font-size: 20px;
-  content: '\a Adidas/New Balance';
+  font-size: 30px;
+  content: '\a Adidas\a\a New Balance';
   white-space: pre;
   padding-top: 12px;
   background-color: black;
@@ -335,36 +245,29 @@ body{
 
 @keyframes jordan {
   0% {
-    /* transform: translateY(0) scale(1) rotate(0deg); */
     transform: translateX(8px);
-    /* visibility: visible;
-    opacity: 1; */
-    /* transition: all .2s ease-in-out */
     color: white
   }
   20% {
-    /* transform: translateY(-25px) scale(4) rotate(360deg); */
     transform: translateX(-8px);
-    /* visibility: visible;
-    opacity: 1; */
   }
   60% {
-    /* transform: translateY(-25px) scale(4) rotate(360deg); */
     transform: translateX(4px);
-    /* visibility: visible;
-    opacity: 1; */
   }
   80% {
-    /* transform: translateY(-25px) scale(4) rotate(360deg); */
     transform: translateX(-4px);
-    /* visibility: visible;
-    opacity: 1; */
   }
   100% {
-    /* transform: translateY(0) scale(1) rotate(0deg); */
     transform: translateX(0px);
-    /* visibility: visible;
-    opacity: 1; */
-
   }
+}
+
+.p1text{
+  font-family: 'Abril Fatface', cursive;
+  font-size: 30px;
+}
+
+.p2text{
+  font-family: 'Abril Fatface', cursive;
+  font-size: 30px;
 }
