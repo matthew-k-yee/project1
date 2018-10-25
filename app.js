@@ -19,7 +19,7 @@ let player2Text = document.querySelector('.p2text');
 function player2Choice() {
   let choices = ['nike', 'adidas', 'reebok', 'new balance', 'jordan'];
   let random = Math.floor(Math.random() * 5)
-  player2Text.innerHTML = 'Le Whack picked ' + choices[random];
+  player2Text.innerHTML = 'Guy Fieri picked ' + choices[random];
   return choices[random];
 
 }
