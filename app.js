@@ -27,12 +27,15 @@ const jordan_box = document.querySelector('img#img5')
 
 let bigImg = '';
 const playerOneImg = document.querySelector('#player_1_img');
+const playerTwoImg = document.querySelector('#player_2_img');
 
 function player2Choice() {
-  let choices = ['nike', 'adidas', 'asics', 'new balance', 'jordan'];
+  let choices = [{name:'nike', url: "./images/nike.jpeg"},{name:'adidas', url: "./images/adidas.jpeg"}, {name: 'asics', url: "./images/asics.jpeg"}, {name: 'new balance', url: "./images/new-balance.jpeg"}, {name:
+  'jordan', url: "./images/jordan.jpeg"} ];
   let random = Math.floor(Math.random() * 5)
-  player2Text.innerHTML = 'Guy Fieri picked ' + choices[random];
-  return choices[random];
+  player2Text.innerHTML = 'Guy Fieri picked ' + choices[random].name;
+  playerTwoImg.src = choices[random].url;
+  return choices[random].name;
 }
 
 function gameConditions (choice) {
@@ -66,8 +69,7 @@ function gameConditions (choice) {
 function win(choice) {
   player1Score++;
   score1.innerHTML = player1Score;
-  console.log(`this is player1Score: ${player1Score}`);
-  if(player1Score > 21) {
+  if(player1Score > 20) {
     alert('BELIEVE THE HYPE. YOU WIN!')
   }
 }
@@ -75,8 +77,7 @@ function win(choice) {
 function lose() {
   player2Score++;
   score2.innerHTML = player2Score;
-  console.log(`this is player2Score: ${player2Score}`);
-  if(player2Score > 21) {
+  if(player2Score > 20) {
     alert('TAKE THIS L')
   }
 }
@@ -127,8 +128,3 @@ function action() {
   });
 }
 action();
-
-
-function nike_img () {
-
-}
