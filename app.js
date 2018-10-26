@@ -1,6 +1,6 @@
-let player1Score = 0;
-let player2Score = 0;
-let gameOver;
+let player1Score = "";
+let player2Score = "";
+
 
 const nike = document.querySelector('#box1');
 const adidas = document.querySelector('#box2');
@@ -18,6 +18,8 @@ let show_img2 = document.querySelector('.player2gameZone')
 let commentary = document.querySelector('#commentary-text');
 let player1Text = document.querySelector('.p1text');
 let player2Text = document.querySelector('.p2text');
+player1Text.innerHTML = "Are you a ";
+player2Text.innerHTML = " HYPEBEAST?"
 
 const nike_box = document.querySelector('img#img1')
 const adidas_box = document.querySelector('img#img2')
@@ -26,12 +28,30 @@ const newBalance_box = document.querySelector('img#img4')
 const jordan_box = document.querySelector('img#img5')
 
 let bigImg = '';
-const playerOneImg = document.querySelector('#player_1_img');
-const playerTwoImg = document.querySelector('#player_2_img');
+let playerOneImg = document.querySelector('#player_1_img');
+let playerTwoImg = document.querySelector('#player_2_img');
+
+function gameInitialize () {
+  player1Score = 0;
+  player2Score = 0;
+  score1.innerHTML =  player1Score;
+  score2.innerHTML = player2Score;
+  player1Text = document.querySelector('.p1text');
+  player2Text = document.querySelector('.p2text');
+  player1Text.innerHTML = "Are you a ";
+  player2Text.innerHTML = " HYPEBEAST?"
+  playerOneImg.src = ""
+  playerTwoImg.src = ""
+}
 
 function player2Choice() {
-  let choices = [{name:'nike', url: "./images/nike.jpeg"},{name:'adidas', url: "./images/adidas.jpeg"}, {name: 'asics', url: "./images/asics.jpeg"}, {name: 'new balance', url: "./images/new-balance.jpeg"}, {name:
-  'jordan', url: "./images/jordan.jpeg"} ];
+  let choices = [
+    {name: 'nike', url: "./images/nike.jpeg"},
+    {name: 'adidas', url: "./images/adidas.jpeg"},
+    {name: 'asics', url: "./images/asics.jpeg"},
+    {name: 'new balance', url: "./images/new-balance.jpeg"},
+    {name: 'jordan', url: "./images/jordan.jpeg"}
+  ];
   let random = Math.floor(Math.random() * 5)
   player2Text.innerHTML = 'Guy Fieri picked ' + choices[random].name;
   playerTwoImg.src = choices[random].url;
@@ -62,7 +82,7 @@ function gameConditions (choice) {
   } else if ( player2 === 'jordan' && (choice === 'new balance' || choice === 'adidas')) {
       return lose();
   } else {
-    player1Text.innerHTML = 'TIE'
+    return tie();
   }
 }
 
@@ -80,6 +100,11 @@ function lose() {
   if(player2Score > 20) {
     alert('TAKE THIS L')
   }
+}
+
+function tie() {
+  player1Text.innerText = "ddad";
+  player2Text.innerHTML = "DRAW";
 }
 
 function p1Message(choice) {
@@ -128,3 +153,11 @@ function action() {
   });
 }
 action();
+
+
+let resetGame = document.querySelector("button#replay");
+resetGame.addEventListener('click', gameRestart);
+
+function gameRestart() {
+   gameInitialize();
+}
