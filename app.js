@@ -89,7 +89,7 @@ function gameConditions (choice) {
 function win(choice) {
   player1Score++;
   score1.innerHTML = player1Score;
-  if(player1Score > 20) {
+  if(player1Score > 9) {
     alert('BELIEVE THE HYPE. YOU WIN!')
   }
 }
@@ -97,7 +97,7 @@ function win(choice) {
 function lose() {
   player2Score++;
   score2.innerHTML = player2Score;
-  if(player2Score > 20) {
+  if(player2Score > 9) {
     alert('TAKE THIS L')
   }
 }
