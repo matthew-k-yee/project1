@@ -105,7 +105,7 @@ function tie() {
 }
 
 function p1Message(choice) {
-  player1Text.innerHTML = `HYPEGAWD chose ${choice} |`
+  player1Text.innerHTML = `PLAYER 1 chose ${choice} |`
 }
 
 function action() {
@@ -121,7 +121,6 @@ function action() {
     playerOneImg.src = bigImg;
     gameConditions('adidas');
     p1Message('adidas');
-
   });
 
   asics.addEventListener('click', function(e){
@@ -144,7 +143,6 @@ function action() {
     gameConditions('jordan');
     p1Message('jordan');
   });
-  
 }
 
 action()
