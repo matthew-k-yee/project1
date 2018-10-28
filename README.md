@@ -6,6 +6,8 @@ LINK TO DEPLOYED GAME:
 
 WIREFRAME:
 -- attached on GitHub.
+-- original wireframe, was the initial proposal for the game.
+-- remaster wireframe, was the the wireframe used to build the game. 
 
 DESCRIPTION:
 -- The game built is inspired by Rock, Paper, Scissors. DRIP FLIP BRICK SKIP SICK, is a modern
