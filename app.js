@@ -19,13 +19,13 @@ let commentary = document.querySelector('#commentary-text');
 let player1Text = document.querySelector('.p1text');
 let player2Text = document.querySelector('.p2text');
 player1Text.innerHTML = "Are you a ";
-player2Text.innerHTML = " HYPEBEAST?"
+player2Text.innerHTML = "HYPEBEAST?";
 
-const nike_box = document.querySelector('img#img1')
-const adidas_box = document.querySelector('img#img2')
-const asics_box = document.querySelector('img#img3')
-const newBalance_box = document.querySelector('img#img4')
-const jordan_box = document.querySelector('img#img5')
+const nike_box = document.querySelector('img#img1');
+const adidas_box = document.querySelector('img#img2');
+const asics_box = document.querySelector('img#img3');
+const newBalance_box = document.querySelector('img#img4');
+const jordan_box = document.querySelector('img#img5');
 
 let bigImg = '';
 let playerOneImg = document.querySelector('#player_1_img');
@@ -39,9 +39,9 @@ function gameInitialize () {
   player1Text = document.querySelector('.p1text');
   player2Text = document.querySelector('.p2text');
   player1Text.innerHTML = "Are you a ";
-  player2Text.innerHTML = " HYPEBEAST?"
-  playerOneImg.src = ""
-  playerTwoImg.src = ""
+  player2Text.innerHTML = " HYPEBEAST?";
+  playerOneImg.src = "";
+  playerTwoImg.src = "";
 }
 
 function player2Choice() {
@@ -52,16 +52,14 @@ function player2Choice() {
     {name: 'new balance', url: "./images/new-balance.jpeg"},
     {name: 'jordan', url: "./images/jordan.jpeg"}
   ];
-  let random = Math.floor(Math.random() * 5)
-  player2Text.innerHTML = 'Guy Fieri picked ' + choices[random].name;
+  let random = Math.floor(Math.random() * 5);
+  player2Text.innerHTML =  'Computer chose ' + choices[random].name;
   playerTwoImg.src = choices[random].url;
   return choices[random].name;
 }
 
 function gameConditions (choice) {
-  console.log(`user1 choice: ${choice}`);
   let player2 = player2Choice();
-  console.log(`user2 choice: ${player2}`)
   if ( choice === 'nike' && (player2 === 'adidas' || player2 === 'jordan')) {
       return win();
   } else if ( choice === 'adidas' && (player2 === 'new balance' || player2 === 'asics')) {
@@ -103,24 +101,19 @@ function lose() {
 }
 
 function tie() {
-  player1Text.innerText = "ddad";
-  player2Text.innerHTML = "DRAW";
+  player1Text.innerText = "DRAW";
 }
 
 function p1Message(choice) {
   player1Text.innerHTML = `HYPEGAWD chose ${choice} |`
 }
 
-
 function action() {
   nike.addEventListener('click', function(e){
-    // console.log(e)
-    // console.log(e.target.src);
     bigImg = e.target.src;
     playerOneImg.src = bigImg;
     gameConditions('nike');
     p1Message('nike');
-
   });
 
   adidas.addEventListener('click', function(e){
@@ -151,8 +144,10 @@ function action() {
     gameConditions('jordan');
     p1Message('jordan');
   });
+  
 }
-action();
+
+action()
 
 
 let resetGame = document.querySelector("button#replay");

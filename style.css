@@ -107,7 +107,7 @@ body{
 
 #box1:hover:after{
   font-size: 20px;
-  content: '\a Adidas & Jordan';
+  content: '\a Nike Beats\a Adidas & Jordan';
   width: 100%;
   white-space: pre;
   padding-top: 12px;
@@ -139,7 +139,7 @@ body{
 
 #box2:hover:after{
   font-size: 20px;
-  content: '\a Asics & New Balance';
+  content: '\a Adidas Beats\a Asics & New Balance';
   width: 100%;
   padding-top: 12px;
   white-space: pre;
@@ -170,7 +170,7 @@ body{
 
 #box3:hover:after{
   font-size: 20px;
-  content: '\a Nike & Jordan';
+  content: '\a Asics Beats\a Nike & Jordan';
   white-space: pre;
   padding-top: 12px;
   background-color: white;
@@ -200,7 +200,7 @@ body{
 
 #box4:hover:after{
   font-size: 20px;
-  content: '\a Nike & Asics';
+  content: '\a New Balance Beats\a Nike & Asics';
   white-space: pre;
   padding-top: 12px;
   background-color: white;
@@ -230,7 +230,8 @@ body{
 
 #box5:hover:after{
   font-size: 20px;
-  content: '\a Adidas & New Balance';
+  text-align: center;
+  content: '\a Jordan Beats\a Adidas & New Balance';
   white-space: pre;
   padding-top: 12px;
   background-color: white;
