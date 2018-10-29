@@ -77,6 +77,7 @@ function gameConditions (choice) {
   } else if ( player2 === 'asics' && (choice === 'nike' || choice === 'jordan')) {
       return lose();
   } else if ( player2 === 'new balance' && (choice === 'nike' || choice === 'asics')) {
+    return lose();
   } else if ( player2 === 'jordan' && (choice === 'new balance' || choice === 'adidas')) {
       return lose();
   } else {
