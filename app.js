@@ -146,8 +146,13 @@ function action() {
 }
 action();
 
-let title = document.querySelector('#movetext');
-title.style.animation = 'slide 3s 1'
+document.querySelector('#movetext').animate([
+  {transform: 'translateY(0px)'},
+  {transform: 'translateY-300px'},
+], {
+  duration: 1000,
+  iteration: 1
+});
 
 let resetGame = document.querySelector("button#replay");
 resetGame.addEventListener('click', gameRestart);
