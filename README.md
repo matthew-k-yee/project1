@@ -5,9 +5,10 @@ LINK TO DEPLOYED GAME:
 -- tacit-north.surge.sh
 
 WIREFRAME:
--- attached on GitHub.
+![WIREFRAME1](project1/wireframe/original wireframe.jpg)
+![WIREFRAME2](project1/wireframe/remastered wireframe.jpg)
 -- original wireframe, was the initial proposal for the game.
--- remaster wireframe, was the the wireframe used to build the game. 
+-- remaster wireframe, was the the wireframe used to build the game.
 
 DESCRIPTION:
 -- The game built is inspired by Rock, Paper, Scissors. DRIP FLIP BRICK SKIP SICK, is a modern
