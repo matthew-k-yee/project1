@@ -144,7 +144,6 @@ function action() {
     p1Message('jordan');
   });
 }
-
 action();
 
 let title = document.querySelector('#movetext');
