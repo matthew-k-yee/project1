@@ -1,7 +1,6 @@
 let player1Score = "";
 let player2Score = "";
 
-
 const nike = document.querySelector('#box1');
 const adidas = document.querySelector('#box2');
 const asics = document.querySelector('#box3');
@@ -146,8 +145,10 @@ function action() {
   });
 }
 
-action()
+action();
 
+let title = document.querySelector('#movetext');
+title.style.animation = 'slide 3s 1'
 
 let resetGame = document.querySelector("button#replay");
 resetGame.addEventListener('click', gameRestart);
