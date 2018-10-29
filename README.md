@@ -5,8 +5,8 @@ LINK TO DEPLOYED GAME:
 -- tacit-north.surge.sh
 
 WIREFRAME:
-![WIREFRAME1](project1/wireframe/original wireframe.jpg)
-![WIREFRAME2](project1/wireframe/remastered wireframe.jpg)
+![WIREFRAME1](/project1/wireframe/original wireframe.jpg)
+![WIREFRAME2](/project1/wireframe/remastered wireframe.jpg)
 -- original wireframe, was the initial proposal for the game.
 -- remaster wireframe, was the the wireframe used to build the game.
 
