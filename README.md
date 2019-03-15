@@ -2,7 +2,7 @@ PROJECT 01:
 -- DRIP FLIP BRICK SKIP SICK
 
 LINK TO DEPLOYED GAME:
-* [Deploy Link] (http://tacit-north.surge.sh)
+* [Deploy Link](http://tacit-north.surge.sh)
 
 WIREFRAME:
 - [Original Wireframe](https://github.com/matthew-k-yee/project1/blob/master/wireframe/original%20wireframe)
