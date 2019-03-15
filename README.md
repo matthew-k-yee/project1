@@ -6,8 +6,8 @@ LINK TO DEPLOYED GAME:
 
 WIREFRAME:
 - [Original Wireframe](https://github.com/matthew-k-yee/project1/blob/master/wireframe/original%20wireframe)
+-- original wireframe, was the initial proposal for the game
 - [Remastered Wireframe](https://github.com/matthew-k-yee/project1/blob/master/wireframe/remastered%20wireframe.jpg)
--- original wireframe, was the initial proposal for the game.
 -- remaster wireframe, was the the wireframe used to build the game.
 
 DESCRIPTION:
