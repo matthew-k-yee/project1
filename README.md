@@ -5,8 +5,8 @@ LINK TO DEPLOYED GAME:
 * [Deploy Link] (http://tacit-north.surge.sh)
 
 WIREFRAME:
-(https://github.com/matthew-k-yee/project1/blob/master/wireframe/original%20wireframe "Original Wireframe")
-(https://github.com/matthew-k-yee/project1/blob/master/wireframe/remastered%20wireframe.jpg "Remastered Wireframe")
+- [Original Wireframe](https://github.com/matthew-k-yee/project1/blob/master/wireframe/original%20wireframe)
+- [Remastered Wireframe](https://github.com/matthew-k-yee/project1/blob/master/wireframe/remastered%20wireframe.jpg)
 -- original wireframe, was the initial proposal for the game.
 -- remaster wireframe, was the the wireframe used to build the game.
 
